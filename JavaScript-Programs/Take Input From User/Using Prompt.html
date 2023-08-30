@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input From User</title>
+</head>
+
+<body style="background-color:powderblue;">
+    <script>
+
+        let didPressOk = confirm("Do you want to fill custome data");
+        let data;
+        if (didPressOk === true) {
+            data = prompt("Enter custome data:");
+        } else {
+            data = prompt("Enter some data:", "Default data");
+        }
+
+        document.write("You Entered:" + data);
+    </script>
+</body>
+
+</html>

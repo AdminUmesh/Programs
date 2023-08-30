@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>User Input Using querySelector </title>
+</head>
+
+<body>
+    <center>
+        Please Enter Some Input: </Input><input id="user-data" />
+        <br><br>
+        <button onclick="func()">Check</button>
+    </center>
+    <script>
+        function func(){
+            const input = document.getElementById('user-data');
+        const data = input.value;
+        document.write("You Entered:" + data);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Check Palindrome</title>
+
+	<script>
+		function func() {
+			var num;
+			num = (document.getElementById("first").value);
+			var j = num.length - 1
+			for (var i = 0; i < num.length / 2; i++) {
+				if (num[i] != num[j]) {
+					alert("Not a pelindrome");
+				}
+				j--;
+			}
+			alert("Pelindrome");
+		}
+	</script>
+</head>
+
+<body style="background-color:powderblue;">
+	<center>
+		<br><br>
+		<br><br>
+		<br><br>
+		<h1>Number : <input id="first"></h1>
+		<h1><button onclick="func()">CALCULATE</button></h1>
+	</center>
+</body>
+
+</html>
