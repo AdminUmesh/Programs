@@ -1,4 +1,4 @@
-//Find the only non-repeating element in array where every element repeats twice.
+//Find the only one non-repeating element in array where every element repeats twice.
 
 public class NonRepeating {
     public static void main(String[] args) {
