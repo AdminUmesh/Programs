@@ -1,6 +1,6 @@
 //Circuiler Queue data Structure implementation using Array
 
-class Patel {
+class Umesh {
     int arr[] = new int[5];
     int n = arr.length;
     int rear = -1;
@@ -46,7 +46,7 @@ public class CircularQue {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
-        Patel p = new Patel();
+        Umesh p = new Umesh();
         p.enqueue(4);
         p.enqueue(8);
         p.enqueue(12);

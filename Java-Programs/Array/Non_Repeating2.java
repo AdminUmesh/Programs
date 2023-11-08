@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Non_Repeating2 {
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
 
         int[] array = {1, 2, 3, 2, 4, 5, 3, 6, 7, 7};
 

@@ -1,27 +1,41 @@
 //Two sorted array store in one array(in sorted array From).
 
+import java.util.Arrays;
+
 public class TwoInOne {
 	public static void main(String[] args) {
-		int a[] = { 11, 34, 66, 75 };
-		int b[] = { 1, 5, 19, 50, 89, 100 };
-		int c = a.length;
-		int d = b.length;
-		int fi[] = new int[c + d];
-		int i = 0, j = 0, k = 0, x;
-		while (i < c && j < d) {
-			if (a[i] < b[j])
-				fi[k++] = a[i++];
-			else
-				fi[k++] = b[j++];
+		int a1[] = { 11, 34, 66, 75 };
+		int a2[] = { 1, 5, 19, 50, 89, 100 };
+		int lena1=a1.length;
+		int lena2=a2.length;
+		int b[]=new int[lena1+lena2];
+		int count1=0, count2=0;
+
+		// Merge both arrays in a single array
+		for(int i=0; i<lena1+lena2-1; i++){
+			if(i<lena1){
+				b[i+count2]=a1[i];
+				count1++;
+			}
+
+			if(i<lena2){
+				b[i+count1]=a2[i];
+				count2++;
+			}
 		}
-		while (i < c) {
-			fi[k++] = a[i++];
+
+		// sorting merged array
+
+		for(int i=0; i<b.length; i++){
+			for(int j=0+i; j<b.length; j++){
+				if(b[i]>b[j]){
+					int temp=b[i];
+					b[i]=b[j];
+					b[j]=temp;
+				}
+			}
 		}
-		while (j < d) {
-			fi[k++] = b[j++];
-		}
-		for (x = 0; x < (c + d); x++) {
-			System.out.print(fi[x] + " ");
-		}
+
+		System.out.println(Arrays.toString(b));
 	}
 }
