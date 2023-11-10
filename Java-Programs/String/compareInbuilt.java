@@ -1,4 +1,4 @@
-// Compare the two String without any inbuilt function
+// Compare the two String without any inbuilt function CAse sensetive
 
 import java.util.Scanner;
 
